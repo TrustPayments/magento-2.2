@@ -1,0 +1,35 @@
+{
+	"name" : "trustpayments/magento-2-2",
+	"description" : "Trust Payments integration for Magento 2.2",
+	"keywords": [
+		"Trust Payments",
+		"payment",
+		"php",
+		"magento",
+		"magento2",
+		"magento2.2"
+	],
+	"homepage": "https://www.trustpayments.com//",
+	"license": "Apache-2.0",
+	"authors": [
+		{
+			"name": "customweb GmbH",
+			"homepage": "https://customweb.com"
+		}
+	],
+	"type" : "magento2-module",
+	"version" : "1.0.84",
+	"require" : {
+		"php": "7.0.2|7.0.4|~7.0.6|~7.1.0|~7.2.0",
+		"magento/framework" : "^101.0.2",
+		"trustpayments/sdk": "2.0.18"
+	},
+	"autoload" : {
+		"files" : [
+			"registration.php"
+		],
+		"psr-4": {
+			"TrustPayments\\Payment\\": ""
+		}
+	}
+}
